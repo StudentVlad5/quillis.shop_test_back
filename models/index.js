@@ -14,6 +14,7 @@ const Category_ua = require("./category_ua");
 const Category_ru = require("./category_ru");
 const Category_en = require("./category_en");
 const Category_de = require("./category_de");
+const ReadyStyles = require("./ready_styles");
 const Shop = require("./shop");
 const Shop_ua = require("./shop_ua");
 const Shop_ru = require("./shop_ru");
@@ -51,5 +52,6 @@ module.exports = {
   Test_en,
   Test_de,
   Messages,
+  ReadyStyles,
   eMailValidationSchema,
 };
