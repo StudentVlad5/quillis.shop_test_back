@@ -12,6 +12,7 @@ const {
   getShopByFilter_ru,
   getShopByFilter_en,
   getShopByFilter_de,
+  getShopById,
   getShopById_ua,
   getShopById_ru,
   getShopById_de,
@@ -22,6 +23,7 @@ const {
   getDiscountShop_ru,
   getDiscountShop_en,
   getDiscountShop_de,
+  getRateShop,
   getRateShop_ua,
   getRateShop_ru,
   getRateShop_en,
@@ -52,11 +54,13 @@ router.get("/ru/discount", ctrlWrapper(getDiscountShop_ru));
 router.get("/de/discount", ctrlWrapper(getDiscountShop_de));
 router.get("/en/discount", ctrlWrapper(getDiscountShop_en));
 
+router.get("/rate", ctrlWrapper(getRateShop));
 router.get("/ua/rate", ctrlWrapper(getRateShop_ua));
 router.get("/ru/rate", ctrlWrapper(getRateShop_ru));
 router.get("/de/rate", ctrlWrapper(getRateShop_de));
 router.get("/en/rate", ctrlWrapper(getRateShop_en));
 
+router.get("/byid/:id/", ctrlWrapper(getShopById));
 router.get("/ua/byid/:id/", ctrlWrapper(getShopById_ua));
 router.get("/ru/byid/:id/", ctrlWrapper(getShopById_ru));
 router.get("/de/byid/:id/", ctrlWrapper(getShopById_de));

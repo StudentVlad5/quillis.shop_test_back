@@ -6126,7 +6126,7 @@ const getShopByFilter = async (req, res, next) => {
     // FINISH UAH
       }
   // перевірка по німецькій. мові
-  if(selectedLanguage === "en"){
+  if(selectedLanguage === "de"){
     // перевірка по валюті
     if(currency === "usd"){
         // пошук по search
